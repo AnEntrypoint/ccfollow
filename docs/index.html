@@ -23,7 +23,7 @@
           <a href="#install">Install</a>
           <a href="#events">Events</a>
           <a href="#api">API</a>
-          <a href="https://github.com/AnEntrypoint/ccf" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/AnEntrypoint/ccfollow" target="_blank" rel="noopener">GitHub</a>
           <button class="btn btn-ghost btn-sm theme-toggle" id="themeToggle" aria-label="Toggle theme">
             <span class="theme-icon">☀</span>
           </button>
@@ -38,12 +38,12 @@
         <div class="hero-badge">Zero dependencies · ESM + CJS · Node ≥ 18</div>
         <h1 class="hero-title">Watch Claude Code output<br /><span class="hero-accent">as it happens.</span></h1>
         <p class="hero-subtitle">
-          ccf tails <code>~/.claude/projects/</code> JSONL files and emits structured events —
+          ccfollow tails <code>~/.claude/projects/</code> JSONL files and emits structured events —
           streaming starts, tool calls, results — as a standard Node.js EventEmitter.
         </p>
         <div class="hero-actions">
           <div class="install-box">
-            <code class="install-cmd" id="installCmd">npm install @lanmower/ccf</code>
+            <code class="install-cmd" id="installCmd">npm install ccfollow</code>
             <button class="copy-btn" id="copyInstall" aria-label="Copy install command">⎘</button>
           </div>
         </div>
@@ -58,7 +58,7 @@
               <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
               <span class="card-title">ESM / TypeScript</span>
             </div>
-            <pre class="code-block"><code><span class="kw">import</span> <span class="br">{</span> watch <span class="br">}</span> <span class="kw">from</span> <span class="str">'@lanmower/ccf'</span><span class="pu">;</span>
+            <pre class="code-block"><code><span class="kw">import</span> <span class="br">{</span> watch <span class="br">}</span> <span class="kw">from</span> <span class="str">'ccfollow'</span><span class="pu">;</span>
 
 <span class="kw">const</span> watcher <span class="pu">=</span> watch<span class="pu">()</span>
   <span class="pu">.</span>on<span class="pu">(</span><span class="str">'conversation_created'</span><span class="pu">,</span> <span class="pu">({</span> conversation <span class="pu">})</span> <span class="pu">=&gt;</span> <span class="br">{</span>
@@ -80,7 +80,7 @@ process<span class="pu">.</span>on<span class="pu">(</span><span class="str">'SI
               <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
               <span class="card-title">CommonJS</span>
             </div>
-            <pre class="code-block"><code><span class="kw">const</span> <span class="br">{</span> watch<span class="pu">,</span> JsonlWatcher <span class="br">}</span> <span class="pu">=</span> require<span class="pu">(</span><span class="str">'@lanmower/ccf'</span><span class="pu">)</span><span class="pu">;</span>
+            <pre class="code-block"><code><span class="kw">const</span> <span class="br">{</span> watch<span class="pu">,</span> JsonlWatcher <span class="br">}</span> <span class="pu">=</span> require<span class="pu">(</span><span class="str">'ccfollow'</span><span class="pu">)</span><span class="pu">;</span>
 
 <span class="co">// Use default ~/.claude/projects dir</span>
 <span class="kw">const</span> watcher <span class="pu">=</span> watch<span class="pu">()</span><span class="pu">;</span>
@@ -115,7 +115,7 @@ w<span class="pu">.</span>on<span class="pu">(</span><span class="str">'streamin
     <section class="section section-alt demo-section" id="demo">
       <div class="container">
         <h2 class="section-title">Live Event Stream</h2>
-        <p class="section-sub">This is what ccf emits when Claude Code runs.</p>
+        <p class="section-sub">This is what ccfollow emits when Claude Code runs.</p>
         <div id="demoRoot"></div>
       </div>
     </section>
@@ -123,7 +123,7 @@ w<span class="pu">.</span>on<span class="pu">(</span><span class="str">'streamin
 
   <footer class="site-footer">
     <div class="container">
-      <p>MIT License · <a href="https://github.com/AnEntrypoint/ccf">AnEntrypoint/ccf</a> · Built with <a href="https://webjsx.org">WebJSX</a> + <a href="https://ripple-ui.com">RippleUI</a></p>
+      <p>MIT License · <a href="https://github.com/AnEntrypoint/ccfollow">AnEntrypoint/ccfollow</a> · Built with <a href="https://webjsx.org">WebJSX</a> + <a href="https://ripple-ui.com">RippleUI</a></p>
     </div>
   </footer>
 

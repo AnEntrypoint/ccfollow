@@ -1,17 +1,17 @@
-# ccf
+# ccfollow
 
 Watch Claude Code JSONL output files and emit structured events as a Node.js EventEmitter.
 
 ## Install
 
 ```bash
-npm install @lanmower/ccf
+npm install ccfollow
 ```
 
 ## Usage
 
 ```js
-import { watch } from '@lanmower/ccf';
+import { watch } from 'ccfollow';
 
 const watcher = watch()
   .on('conversation_created', ({ conversation }) => {
@@ -30,7 +30,7 @@ process.on('SIGINT', () => watcher.stop());
 CommonJS:
 
 ```js
-const { watch, JsonlWatcher } = require('@lanmower/ccf');
+const { watch, JsonlWatcher } = require('ccfollow');
 ```
 
 ## API

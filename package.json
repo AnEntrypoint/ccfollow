@@ -1,5 +1,5 @@
 {
-  "name": "@lanmower/ccf",
+  "name": "ccfollow",
   "version": "1.0.4",
   "description": "Watch Claude Code JSONL output files and emit structured events as a Node.js EventEmitter",
   "type": "module",
@@ -26,9 +26,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnEntrypoint/ccf.git"
+    "url": "git+https://github.com/AnEntrypoint/ccfollow.git"
   },
-  "homepage": "https://anentrypoint.github.io/ccf",
+  "homepage": "https://anentrypoint.github.io/ccfollow",
   "engines": {
     "node": ">=18"
   }

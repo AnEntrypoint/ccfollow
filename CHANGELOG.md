@@ -9,4 +9,4 @@
 - Dual ESM + CJS exports (`src/index.js` + `src/index.cjs`)
 - Zero external dependencies, Node >= 18
 - GitHub Actions: npm publish on `v*` tags, gh-pages deploy on every main push
-- Landing page at https://anentrypoint.github.io/ccf/ (WebJSX + RippleUI, dark/light theme)
+- Landing page at https://anentrypoint.github.io/ccfollow/ (WebJSX + RippleUI, dark/light theme)
