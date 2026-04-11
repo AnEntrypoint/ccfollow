@@ -1,5 +1,5 @@
 {
-  "name": "@lanmower/cc-tail",
+  "name": "@lanmower/ccf",
   "version": "1.0.2",
   "description": "Watch Claude Code JSONL output files and emit structured events as a Node.js EventEmitter",
   "type": "module",
@@ -26,9 +26,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnEntrypoint/cc-tail.git"
+    "url": "git+https://github.com/AnEntrypoint/ccf.git"
   },
-  "homepage": "https://anentrypoint.github.io/cc-tail",
+  "homepage": "https://anentrypoint.github.io/ccf",
   "engines": {
     "node": ">=18"
   }
